@@ -12,6 +12,8 @@
 		D8D0B91221B6CE710058565B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D0B91021B6CE710058565B /* Main.storyboard */; };
 		D8D0B91421B6CE730058565B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D0B91321B6CE730058565B /* Assets.xcassets */; };
 		D8D0B91721B6CE730058565B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D0B91521B6CE730058565B /* LaunchScreen.storyboard */; };
+		D8D0B91F21B6DE960058565B /* Contacto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D0B91E21B6DE960058565B /* Contacto.swift */; };
+		D8D0B92121B6EA360058565B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D0B92021B6EA360058565B /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D8D0B91321B6CE730058565B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8D0B91621B6CE730058565B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8D0B91821B6CE730058565B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8D0B91E21B6DE960058565B /* Contacto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacto.swift; sourceTree = "<group>"; };
+		D8D0B92021B6EA360058565B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,9 @@
 		D8D0B90B21B6CE710058565B /* Aula2 */ = {
 			isa = PBXGroup;
 			children = (
+				D8D0B92021B6EA360058565B /* TableViewController.swift */,
 				D8D0B90C21B6CE710058565B /* AppDelegate.swift */,
+				D8D0B91E21B6DE960058565B /* Contacto.swift */,
 				D8D0B90E21B6CE710058565B /* ViewController.swift */,
 				D8D0B91021B6CE710058565B /* Main.storyboard */,
 				D8D0B91321B6CE730058565B /* Assets.xcassets */,
@@ -137,6 +143,8 @@
 			files = (
 				D8D0B90F21B6CE710058565B /* ViewController.swift in Sources */,
 				D8D0B90D21B6CE710058565B /* AppDelegate.swift in Sources */,
+				D8D0B91F21B6DE960058565B /* Contacto.swift in Sources */,
+				D8D0B92121B6EA360058565B /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

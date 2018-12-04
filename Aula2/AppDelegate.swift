@@ -12,6 +12,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    // Array de contactos
+    var lstContactos: [Contacto] = []{
+        // Observer que vai ser ativado quando há uma alteração ao array
+        didSet{
+            print("Lista de contactos:")
+            for contacto in lstContactos{
+                print(" -\(contacto.description)")
+            }
+        }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
