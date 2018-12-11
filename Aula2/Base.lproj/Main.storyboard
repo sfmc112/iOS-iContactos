@@ -52,7 +52,7 @@
                     <navigationItem key="navigationItem" title="Lista de Contactos" id="GP3-fx-QMg">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="b9O-MT-G1w">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="hJL-lZ-DJG"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="addContacto" id="hJL-lZ-DJG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -123,6 +123,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.20751982089330212" green="1" blue="0.80950164094058508" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dLj-AI-3ip" secondAttribute="trailing" constant="16" id="1uO-wm-kdC"/>
                             <constraint firstItem="7hV-ut-9It" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6Gg-iJ-iYy"/>
@@ -138,6 +139,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7hV-ut-9It" secondAttribute="trailing" constant="16" id="x6s-K8-xBc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yqB-oL-T8z" appends="YES" id="8nl-Wm-hio"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Novo Contacto" id="twQ-z6-hh2">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="VBF-NG-qhQ">
@@ -152,6 +156,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yqB-oL-T8z">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="jxq-Us-ZS3"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="41" y="18"/>
         </scene>
